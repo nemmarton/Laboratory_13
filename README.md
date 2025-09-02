@@ -7,9 +7,7 @@ Tasks:
 
 # Memo: Binary Trees in C
 
-This memo summarizes the **key concepts** of binary trees in C, including structure, traversal, insertion, and memory management.
 
----
 
 ## 1. What is a Binary Tree?
 
