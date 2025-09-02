@@ -1,0 +1,23 @@
+{
+  "label": "C/C++: gcc build active file",
+  "type": "cppbuild",
+  "command": "/usr/bin/gcc",
+  "args": [
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic",
+    "-g",
+    "${file}",
+    "-o",
+    "${fileDirname}/${fileBasenameNoExtension}"
+  ],
+  "group": {
+    "kind": "build",
+    "isDefault": true
+  },
+  "problemMatcher": ["$gcc"],
+  "detail": "Task for building C files with strict warnings",
+  "options": {
+    "showOutput": "always"
+  }
+}
