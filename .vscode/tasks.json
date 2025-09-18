@@ -4,6 +4,7 @@
   "command": "/usr/bin/gcc",
   "args": [
     "-Wall",
+    "-lm",
     "-Wextra",
     "-Wpedantic",
     "-g",
