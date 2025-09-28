@@ -2,15 +2,18 @@
   "name": "C Development Environment",
   "image": "mcr.microsoft.com/devcontainers/cpp:debian",
   "remoteUser": "vscode",
-  "settings": {
-    "github.copilot.enable": {
-      "*": false
-    },
-    "editor.tabSize": 4,
-    "editor.formatOnSave": true
-  },
-  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y gcc make && sudo apt-get clean && rm -rf /var/lib/apt/lists/* && echo \"alias gcc='gcc -Wall -Wextra -Wpedantic'\" >> ~/.bashrc",
-  "extensions": [
-    "ms-vscode.cpptools"
-  ]
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "github.copilot.enable": {
+          "*": false
+        },
+        "editor.tabSize": 4,
+        "editor.formatOnSave": true
+      },
+      "extensions": [
+        "ms-vscode.cpptools"
+      ]
+    }
+  }
 }
