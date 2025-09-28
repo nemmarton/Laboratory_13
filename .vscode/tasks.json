@@ -1,24 +1,31 @@
 {
-  "label": "C/C++: gcc build active file",
-  "type": "cppbuild",
-  "command": "/usr/bin/gcc",
-  "args": [
-    "-Wall",
-    "-lm",
-    "-Wextra",
-    "-Wpedantic",
-    "-g",
-    "${file}",
-    "-o",
-    "${fileDirname}/${fileBasenameNoExtension}"
-  ],
-  "group": {
-    "kind": "build",
-    "isDefault": true
-  },
-  "problemMatcher": ["$gcc"],
-  "detail": "Task for building C files with strict warnings",
-  "options": {
-    "showOutput": "always"
-  }
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "C/C++: gcc-12 build active file",
+            "type": "cppbuild",
+            "command": "/usr/bin/gcc-12",
+            "args": [
+                "-Wall",
+                "-Wextra",
+                "-Wpedantic",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "-lm"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Build C file with warnings and math library",
+            "options": {
+                "showOutput": "always"
+            }
+        }
+    ]
 }
